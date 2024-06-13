@@ -1,10 +1,11 @@
 ---
 name: Rosetta Stone Subscription Management
-tagLine: Upkeep - SAP Integration
+tagLine: Subscription Management built using Spring Integration
 start: Nov, 2019
 end: May, 2020
 role: Seniro Software Engineer - Java
 client: Rosetta Stone
+order: 3
 company:
   name: Standav Labs Private Limited
   logo: /assets/logos/standav.svg

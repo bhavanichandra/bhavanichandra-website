@@ -1,6 +1,6 @@
 {
   "name": "Bhavani Chandra",
-  "profilePhoto": "/assets/my-profile-photo.jpg",
+  "profilePhoto": "/assets/my-profile-photo.svg",
   "fullName": "Vajapeyayaajula V A S R S Bhavani Chandra",
   "bio": "Senior Software Engineer at GE Vernova. Passionate engineer with drive to build solutions for world problems",
   "experience": [
@@ -9,21 +9,43 @@
       "role": "Senior Software Engineer",
       "joiningDate": "July, 2023",
       "leavingDate": "Present",
-      "companyLogo": "/assets/logos/gevernova.logo"
+      "companyLogo": "/assets/logos/gevernova.svg"
     },
     {
       "name": "Jaggaer - Docskiff",
       "role": "Senior Software Engineer",
       "joiningDate": "Nov, 2021",
       "leavingDate": "July, 2023",
-      "companyLogo": "/assets/logos/jaggaer.logo"
+      "companyLogo": "/assets/logos/jaggaer.svg"
     },
     {
       "name": "Standav Labs Private Limited - Brillio",
       "role": "Software Engineer - MuleSoft",
       "joiningDate": "June, 2018",
       "leavingDate": "Nov, 2021",
-      "companyLogo": "/assets/logos/standav.logo"
+      "companyLogo": "/assets/logos/standav.svg"
+    }
+  ],
+  "socials": [
+    {
+      "name": "Email",
+      "link": "mailto:bhavanichandra9@gmail.com",
+      "logo": "/assets/socials/email.svg"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/bhavanichandra",
+      "logo": "/assets/socials/github.svg"
+    },
+    {
+      "name": "Linkedin",
+      "link": "https://linkedin.com/in/bhavanichandra",
+      "logo": "/assets/socials/linkedin.svg"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://x.com/Bhavanichandra1",
+      "logo": "/assets/socials/twitter.svg"
     }
   ]
 }

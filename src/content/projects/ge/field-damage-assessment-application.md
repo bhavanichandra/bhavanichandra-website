@@ -3,6 +3,8 @@ name: Field Damage Assessment
 tagLine: Field app solution to assess damaged assets
 start: Dec, 2023
 end: Present
+role: Senior Software Engineer
+client: Electrification Software (GEV)
 company:
   name: Electrification Software, GE Vernova
   logo: /assets/logos/gevernova.svg

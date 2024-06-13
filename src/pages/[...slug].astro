@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+import Prose from "../components/Prose.astro";
+import { ViewTransitions } from "astro:transitions";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((projectEntry) => {
+    const slug = projectEntry.slug;
+    return {
+      params: { slug: `${slug.split("/")[1]}` },
+      props: { entry: projectEntry },
+    };
+  });
+}
+
+interface Props {
+  entry: CollectionEntry<"projects">;
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { name, tagLine, start, end, company, role, client } = entry.data;
+---
+
+<script>
+  import { navigate } from "astro:transitions/client";
+  const backBtn = document.getElementById("backBtn");
+  if (backBtn) {
+    backBtn.addEventListener("click", async () => {
+      await navigate("/");
+    });
+  }
+</script>
+
+<BaseLayout>
+  <main class="w-full">
+    <div class="grid grid-cols-[0.05fr,0.95fr] items-center">
+      <span class="p-2 cursor-pointer" id="backBtn">
+        <svg
+          class="w-8 h-8"
+          data-slot="icon"
+          fill="none"
+          stroke-width="1.5"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path>
+        </svg>
+      </span>
+      <div class="my-0 mx-auto w-[50%]">
+        <ProjectCard
+          {name}
+          {tagLine}
+          {start}
+          {end}
+          {company}
+          {role}
+          {client}
+          slug={entry.slug}
+          showLink={false}
+        />
+      </div>
+    </div>
+    <Prose>
+      <Content />
+    </Prose>
+  </main>
+</BaseLayout>
+<ViewTransitions />

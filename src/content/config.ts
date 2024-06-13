@@ -7,6 +7,8 @@ const projectsCollection = defineCollection({
     tagLine: z.string(),
     start: z.string(),
     end: z.string(),
+    role:  z.string(),
+    client: z.string(),
     company: z.object({
       name: z.string(),
       logo: z.string(),
@@ -27,6 +29,11 @@ const profileCollection = defineCollection({
       joiningDate: z.string(),
       leavingDate: z.string(),
       companyLogo: z.string(),
+    })),
+    socials: z.array(z.object({
+      name: z.string(),
+      link: z.string(),
+      logo: z.string(),
     }))
   })
 })

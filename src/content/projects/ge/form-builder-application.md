@@ -23,13 +23,9 @@ efficient asset management and service delivery for utility companies.
 ## Contributions
 
 - Contributed the development of the Form Builder tool which enabling customers to design and
-  customize
-  forms from the UI.
+  customize forms from the UI.
 - Implemented enhancements to the Desktop client, incorporating features and functionalities as per
   customer requirements.
-- Upgraded the backend Spring Boot application to leverage the latest Spring Boot 3 and JDK 17.
-- Ensured comprehensive unit test coverage exceeding 90% and documented all changes for product
-  documentation.
 
 ## Key Achievements
 
@@ -43,4 +39,5 @@ efficient asset management and service delivery for utility companies.
 
 - **Frontend:** Angular
 - **Testing:** Unit testing
+- **Deployment:** Jenkins, AWS
 - **Documentation:** Product documentation

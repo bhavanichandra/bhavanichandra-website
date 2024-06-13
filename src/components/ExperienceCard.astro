@@ -1,0 +1,27 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  joiningDate: string;
+  leavingDate: string;
+  companyLogo: string;
+}
+
+const {
+  name,
+  role,
+  joiningDate,
+  leavingDate,
+  companyLogo
+} = Astro.props;
+---
+<div class="py-2">
+  <span class="flex justify-items-start items-center gap-0.5">
+    <span class="py-2">
+      <p class="text-lg font-bold">{name}</p>
+      <p class="text-sm">{role}</p>
+      <p class="text-xs font-light">{joiningDate} - {leavingDate}</p>
+    </span>
+    <span class="ml-auto"><img class="w-20 h-16" src={companyLogo} alt="Company Logo"/> </span>
+  </span>
+</div>
