@@ -1,0 +1,29 @@
+{
+  "name": "Bhavani Chandra",
+  "profilePhoto": "/assets/my-profile-photo.jpg",
+  "fullName": "Vajapeyayaajula V A S R S Bhavani Chandra",
+  "bio": "Senior Software Engineer at GE Vernova. Passionate engineer with drive to build solutions for world problems",
+  "experience": [
+    {
+      "name": "Electrification Software - GE Vernova",
+      "role": "Senior Software Engineer",
+      "joiningDate": "July, 2023",
+      "leavingDate": "Present",
+      "companyLogo": "/assets/logos/gevernova.logo"
+    },
+    {
+      "name": "Jaggaer - Docskiff",
+      "role": "Senior Software Engineer",
+      "joiningDate": "Nov, 2021",
+      "leavingDate": "July, 2023",
+      "companyLogo": "/assets/logos/jaggaer.logo"
+    },
+    {
+      "name": "Standav Labs Private Limited - Brillio",
+      "role": "Software Engineer - MuleSoft",
+      "joiningDate": "June, 2018",
+      "leavingDate": "Nov, 2021",
+      "companyLogo": "/assets/logos/standav.logo"
+    }
+  ]
+}
