@@ -5,6 +5,9 @@ import ExperienceCard from "../components/ExperienceCard.astro";
 import Icon from "../components/Icon.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
+
+export const prerender = true;
+
 const profile = await getEntry("profile", "my-profile");
 const projects = await getCollection("projects");
 ---
