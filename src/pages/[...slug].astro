@@ -5,6 +5,8 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Prose from "../components/Prose.astro";
 import { ViewTransitions } from "astro:transitions";
 
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 export const prerender = true;
 
 export async function getStaticPaths() {
@@ -39,7 +41,9 @@ const { name, tagLine, start, end, company, role, client } = entry.data;
 
 <BaseLayout>
   <main class="w-full">
-    <div class="flex items-center md:grid md:grid-cols-[0.05fr,0.95fr] md:items-center">
+    <div
+      class="flex items-center md:grid md:grid-cols-[0.05fr,0.95fr] md:items-center"
+    >
       <span class="p-2 cursor-pointer" id="backBtn">
         <svg
           class="w-8 h-8"
@@ -77,3 +81,4 @@ const { name, tagLine, start, end, company, role, client } = entry.data;
   </main>
 </BaseLayout>
 <ViewTransitions />
+<SpeedInsights />
