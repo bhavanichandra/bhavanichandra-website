@@ -4,6 +4,7 @@ import { getEntry, getCollection } from "astro:content";
 import ExperienceCard from "../components/ExperienceCard.astro";
 import Icon from "../components/Icon.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 export const prerender = true;
 
@@ -72,3 +73,4 @@ const projects = await getCollection("projects");
     </div>
   </main>
 </BaseLayout>
+<SpeedInsights />
